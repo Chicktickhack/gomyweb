@@ -18,7 +18,7 @@ export const services = [
       "Website satu halaman untuk personal branding, portofolio, produk, atau bisnis.",
 
     price:
-      "Rp500.000 – Rp1.500.000",
+      "Rp500.000 (hosting free domain start 750.000) – Rp3.500.000",
   },
 
   {
