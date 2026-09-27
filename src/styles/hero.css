@@ -1,0 +1,137 @@
+.hero {
+  position: relative;
+
+  width: 100vw;
+  max-width: none;
+
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  height: 100svh;
+  min-height: 600px;
+
+  overflow: hidden;
+
+  background: #000;
+
+  isolation: isolate;
+}
+
+.hero-video {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  display: block;
+
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.12);
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+.hero-button-wrap {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 70px;
+
+  display: flex;
+  justify-content: center;
+
+  z-index: 2;
+}
+
+.hero-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  min-width: 145px;
+
+  padding: 15px 24px;
+
+  border-radius: 999px;
+
+  background: #ffffff;
+  color: #0b0f16;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-3px);
+  background: #f2f2f2;
+}
+
+.hero-button span {
+  font-size: 17px;
+  line-height: 1;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    width: 100vw;
+
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+
+    height: 100svh;
+
+    min-height: 560px;
+  }
+
+  .hero-video {
+    object-position: center center;
+  }
+
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.16);
+  }
+
+  .hero-button-wrap {
+    bottom: 45px;
+  }
+
+  .hero-button {
+    padding: 14px 22px;
+    min-width: 135px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-button {
+    min-width: 125px;
+    padding: 13px 20px;
+  }
+}

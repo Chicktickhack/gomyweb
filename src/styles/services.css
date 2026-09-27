@@ -1,0 +1,379 @@
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.services-section {
+  padding: 80px 0 160px;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.services-heading {
+  display: grid;
+  grid-template-columns: 0.35fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.services-heading-content h2 {
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: clamp(52px, 6vw, 82px);
+  line-height: 0.92;
+  letter-spacing: -0.055em;
+  font-weight: 500;
+
+  color: #111827;
+}
+
+.services-heading-content h2 span {
+  color: #5798e8;
+}
+
+.services-intro {
+  max-width: 440px;
+
+  margin-top: 28px;
+
+  color: #111827;
+
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+/* =========================================================
+   CATALOG
+========================================================= */
+
+.services-catalog {
+  margin-top: 80px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 16px;
+}
+
+/* =========================================================
+   PACKAGE CARD
+========================================================= */
+
+.package-product {
+  min-height: 450px;
+
+  padding: 28px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background: #ffffff;
+
+  border: 1px solid #dce3ec;
+  border-radius: 8px;
+
+  color: #111827;
+
+  cursor: default;
+}
+
+/* =========================================================
+   TOP
+========================================================= */
+
+.product-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-number {
+  color: #5798e8;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 0.12em;
+}
+
+.product-category {
+  color: #111827;
+
+  font-size: 8px;
+  font-weight: 600;
+
+  letter-spacing: 0.16em;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.product-content {
+  padding: 40px 0;
+}
+
+.product-label {
+  color: #5798e8;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 0.14em;
+}
+
+.product-content h3 {
+  margin-top: 14px;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 30px;
+  line-height: 1.05;
+
+  font-weight: 500;
+
+  letter-spacing: -0.035em;
+
+  color: #111827;
+}
+
+.product-content p {
+  margin-top: 18px;
+
+  color: #111827;
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.product-bottom {
+  padding-top: 22px;
+
+  border-top: 1px solid #dce3ec;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+/* =========================================================
+   PRICE
+========================================================= */
+
+.product-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-price span {
+  color: #111827;
+
+  font-size: 8px;
+  font-weight: 600;
+
+  letter-spacing: 0.14em;
+}
+
+.product-price strong {
+  margin-top: 6px;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 17px;
+  font-weight: 500;
+
+  line-height: 1.35;
+
+  color: #111827;
+}
+
+/* =========================================================
+   CONSULTANT BUTTON
+========================================================= */
+
+.product-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 11px 15px;
+
+  border: 1px solid #111827;
+  border-radius: 999px;
+
+  background: #ffffff;
+
+  color: #111827;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  text-decoration: none;
+}
+
+.product-button span {
+  color: #111827;
+
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .services-heading {
+    grid-template-columns: 0.3fr 1fr;
+    gap: 50px;
+  }
+
+  .services-catalog {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .package-product {
+    min-height: 360px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .services-section {
+    padding: 60px 0 100px;
+  }
+
+  .services-heading {
+    display: flex;
+    flex-direction: column;
+
+    gap: 35px;
+  }
+
+  .services-heading-content h2 {
+    font-size: clamp(48px, 13vw, 68px);
+  }
+
+  .services-intro {
+    margin-top: 25px;
+
+    font-size: 14px;
+  }
+
+  .services-catalog {
+    margin-top: 50px;
+
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .package-product {
+    min-height: 390px;
+
+    padding: 22px;
+  }
+
+  .product-content {
+    padding: 35px 0;
+  }
+
+  .product-content h3 {
+    font-size: 28px;
+  }
+
+  .product-content p {
+    font-size: 13px;
+  }
+
+  .product-bottom {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 18px;
+  }
+
+  .product-button {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .package-product {
+    min-height: 370px;
+
+    padding: 20px;
+  }
+
+  .product-category {
+    font-size: 7px;
+  }
+
+  .product-content h3 {
+    font-size: 27px;
+  }
+
+  .product-content p {
+    font-size: 12px;
+  }
+}
+
+.product-whatsapp {
+  width: 48px;
+  height: 48px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid #111827;
+  border-radius: 50%;
+
+  background: #ffffff;
+  color: #111827;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.3s ease,
+    background 0.25s ease;
+}
+
+.product-whatsapp span {
+  font-size: 17px;
+  line-height: 1;
+}
+
+.product-whatsapp:hover {
+  transform: translate(2px, -2px);
+  background: #111827;
+  color: #ffffff;
+}

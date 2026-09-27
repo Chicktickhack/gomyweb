@@ -1,0 +1,419 @@
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.intro-section {
+  padding: 150px 0;
+}
+
+.intro-content {
+  margin-top: 65px;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.about-visual-content {
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+}
+
+/* =========================================================
+   ABOUT COLLAGE
+========================================================= */
+
+.about-collage {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: visible;
+}
+
+/* =========================================================
+   PHOTO CARD
+========================================================= */
+
+.about-card {
+  position: absolute;
+  overflow: hidden;
+
+  background: #e9edf2;
+  border: none;
+  box-shadow: none;
+
+  border-radius: 6px;
+
+  cursor: default;
+}
+
+.about-card img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* =========================================================
+   PHOTO ARRANGEMENT
+========================================================= */
+
+/* LEFT TOP */
+
+.about-card-1 {
+  width: 210px;
+  height: 200px;
+
+  left: 2%;
+  top: 55px;
+
+  transform: rotate(0deg);
+
+  z-index: 2;
+}
+
+/* LEFT BOTTOM */
+
+.about-card-2 {
+  width: 210px;
+  height: 200px;
+
+  left: 2%;
+  top: 275px;
+
+  transform: rotate(0deg);
+
+  z-index: 3;
+}
+
+/* RIGHT TOP */
+
+.about-card-3 {
+  width: 210px;
+  height: 200px;
+
+  right: 2%;
+  top: 0;
+
+  transform: rotate(0deg);
+
+  z-index: 4;
+}
+
+/* RIGHT BOTTOM */
+
+.about-card-4 {
+  width: 210px;
+  height: 200px;
+
+  right: 2%;
+  top: 220px;
+
+  transform: rotate(0deg);
+
+  z-index: 3;
+}
+
+/* =========================================================
+   FIFTH IMAGE
+========================================================= */
+
+.about-card-5 {
+  display: none;
+}
+
+/* =========================================================
+   IMAGE NUMBER
+========================================================= */
+
+.about-card-number {
+  position: absolute;
+
+  right: 12px;
+  bottom: 10px;
+
+  color: #ffffff;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  letter-spacing: 0.12em;
+
+  mix-blend-mode: difference;
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   CENTER LABEL
+========================================================= */
+
+.about-collage-label {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 5px;
+
+  color: #ffffff;
+
+  text-align: center;
+
+  pointer-events: none;
+
+  mix-blend-mode: difference;
+}
+
+.about-collage-label span:first-child {
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 0.2em;
+}
+
+.about-collage-label span:last-child {
+  font-size: 7px;
+
+  letter-spacing: 0.25em;
+
+  opacity: 0.75;
+}
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.intro-text {
+  padding-top: 0;
+  order: 1;
+}
+
+.about-collage {
+  order: 2;
+}
+
+.intro-text p {
+  color: var(--muted);
+
+  font-size: 16px;
+  line-height: 1.8;
+
+  max-width: 480px;
+
+  margin-bottom: 24px;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .intro-content {
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 55px;
+  }
+
+  .about-collage {
+    height: 440px;
+  }
+
+  .about-card-1,
+  .about-card-2,
+  .about-card-3,
+  .about-card-4 {
+    width: 175px;
+    height: 165px;
+  }
+
+  .about-card-1 {
+    left: 0;
+    top: 50px;
+  }
+
+  .about-card-2 {
+    left: 0;
+    top: 235px;
+  }
+
+  .about-card-3 {
+    right: 0;
+    top: 0;
+  }
+
+  .about-card-4 {
+    right: 0;
+    top: 185px;
+  }
+
+  .intro-text p {
+    font-size: 15px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .intro-section {
+    padding: 100px 0;
+  }
+
+  .intro-content {
+    margin-top: 45px;
+
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+  }
+
+  .about-visual-content {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .intro-text {
+    order: 1;
+  }
+
+  .about-collage {
+    order: 2;
+  }
+
+  .about-collage {
+    width: 100%;
+    height: 390px;
+  }
+
+  /* LEFT TOP */
+
+  .about-card-1 {
+    width: 145px;
+    height: 140px;
+
+    left: 2%;
+    top: 45px;
+  }
+
+  /* LEFT BOTTOM */
+
+  .about-card-2 {
+    width: 145px;
+    height: 140px;
+
+    left: 2%;
+    top: 205px;
+  }
+
+  /* RIGHT TOP */
+
+  .about-card-3 {
+    width: 145px;
+    height: 140px;
+
+    right: 2%;
+    top: 0;
+  }
+
+  /* RIGHT BOTTOM */
+
+  .about-card-4 {
+    width: 145px;
+    height: 140px;
+
+    right: 2%;
+    top: 160px;
+  }
+
+  .about-collage-label {
+    top: 48%;
+  }
+
+  .about-collage-label span:first-child {
+    font-size: 9px;
+  }
+
+  .about-collage-label span:last-child {
+    font-size: 6px;
+  }
+
+  .intro-text p {
+    font-size: 15px;
+    line-height: 1.75;
+
+    max-width: 100%;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .about-collage {
+    height: 330px;
+  }
+
+  .about-card-1,
+  .about-card-2,
+  .about-card-3,
+  .about-card-4 {
+    width: 120px;
+    height: 115px;
+  }
+
+  .about-card-1 {
+    left: 0;
+    top: 40px;
+  }
+
+  .about-card-2 {
+    left: 0;
+    top: 175px;
+  }
+
+  .about-card-3 {
+    right: 0;
+    top: 0;
+  }
+
+  .about-card-4 {
+    right: 0;
+    top: 135px;
+  }
+
+  .about-card-number {
+    right: 8px;
+    bottom: 7px;
+
+    font-size: 8px;
+  }
+
+  .about-collage-label span:first-child {
+    font-size: 8px;
+  }
+
+  .about-collage-label span:last-child {
+    font-size: 5px;
+  }
+}
