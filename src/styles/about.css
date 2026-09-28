@@ -128,27 +128,6 @@
   display: none;
 }
 
-/* =========================================================
-   IMAGE NUMBER
-========================================================= */
-
-.about-card-number {
-  position: absolute;
-
-  right: 12px;
-  bottom: 10px;
-
-  color: #ffffff;
-
-  font-size: 9px;
-  font-weight: 600;
-
-  letter-spacing: 0.12em;
-
-  mix-blend-mode: difference;
-
-  pointer-events: none;
-}
 
 /* =========================================================
    CENTER LABEL
@@ -221,7 +200,7 @@
 }
 
 /* =========================================================
-   TABLET
+   TABLET (Collage Selang-Seling Simetris)
 ========================================================= */
 
 @media (max-width: 1000px) {
@@ -232,7 +211,7 @@
   }
 
   .about-collage {
-    height: 440px;
+    height: 450px; /* Diubah dari 440px ke 450px agar margin atas & bawah kartu kiri sama (50px) */
   }
 
   .about-card-1,
@@ -243,6 +222,7 @@
     height: 165px;
   }
 
+  /* KOLOM KIRI (Jarak vertikal antar kartu: 20px) */
   .about-card-1 {
     left: 0;
     top: 50px;
@@ -250,9 +230,10 @@
 
   .about-card-2 {
     left: 0;
-    top: 235px;
+    top: 235px; /* 50px + 165px + 20px gap */
   }
 
+  /* KOLOM KANAN (Jarak vertikal antar kartu: 20px) */
   .about-card-3 {
     right: 0;
     top: 0;
@@ -260,7 +241,7 @@
 
   .about-card-4 {
     right: 0;
-    top: 185px;
+    top: 185px; /* 0px + 165px + 20px gap */
   }
 
   .intro-text p {

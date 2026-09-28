@@ -1,11 +1,9 @@
 export const aboutImages = [
-  "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85",
-  "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=85",
+  "/4photos/atas1.png",
+  "/4photos/atas2.png",
+  "/4photos/bawah1.png",
+  "/4photos/bawah2.png",
 ];
-
 
 export const services = [
   {

@@ -5,7 +5,6 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Services from "./components/Services";
 import Statement from "./components/Statement";
-import Process from "./components/Process";
 import Footer from "./components/Footer";
 
 import "./styles/global.css";

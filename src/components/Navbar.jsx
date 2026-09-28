@@ -16,7 +16,7 @@ export default function Navbar() {
           About
         </a>
 
-        <a href="#contact" className="nav-cta">
+        <a href="https://wa.me/6289529508111" className="nav-cta">
           Let’s Talk
         </a>
       </div>
